@@ -87,13 +87,15 @@
 
 <h1>🎵 FiLMu Demo</h1>
 
-<!-- AUDIO 1 -->
+<!-- AUDIO BLOCKS START -->
+<!-- Paste the 4 audio blocks you already have here -->
+<!-- For brevity, only audio4 is shown below -->
 <div class="audio-card">
-  <h2>audio1</h2>
-  <audio id="audio1" controls src="audio/1019_mix_clip.wav"></audio>
+  <h2>audio4</h2>
+  <audio id="audio4" controls src="audio/989872_clip.wav"></audio>
   <div class="progress-container">
-    <img src="images/1019_output.png" class="progress-image">
-    <div class="progress-bar-overlay" id="bar1"
+    <img src="images/989872_output.png" class="progress-image">
+    <div class="progress-bar-overlay" id="bar4"
          style="--bar-left: 1.3%; --bar-top: 19%; --bar-bottom: 78%; --bar-max-width: 98%;">
     </div>
   </div>
@@ -102,45 +104,13 @@
   <div class="caption-box">
     <div class="caption-label">FiLMu</div>
     <div class="caption-content">
-      A: &lt;tempo&gt;132 bpm&lt;/tempo&gt;<br>
-      B: &lt;tempo&gt;132 bpm&lt;/tempo&gt;<br>
-      C: &lt;tempo&gt;88 bpm&lt;/tempo&gt;
+      A: &lt;tempo&gt;84 bpm&lt;/tempo&gt;
     </div>
   </div>
   <div class="caption-box">
     <div class="caption-label">Ground Truth</div>
     <div class="caption-content">
-      A: 132 bpm<br>
-      B: 132 bpm<br>
-      C: 88 bpm
-    </div>
-  </div>
-</div>
-
-<!-- AUDIO 2 -->
-<div class="audio-card">
-  <h2>audio2</h2>
-  <audio id="audio2" controls src="audio/1595_mix_clip.wav"></audio>
-  <div class="progress-container">
-    <img src="images/1595_output.png" class="progress-image">
-    <div class="progress-bar-overlay" id="bar2"
-         style="--bar-left: 1.3%; --bar-top: 19%; --bar-bottom: 78%; --bar-max-width: 98%;">
-    </div>
-  </div>
-
-  <h3 class="section-title">tempo</h3>
-  <div class="caption-box">
-    <div class="caption-label">FiLMu</div>
-    <div class="caption-content">
-      A: &lt;tempo&gt;103 bpm&lt;/tempo&gt;<br>
-      B: &lt;tempo&gt;154 bpm&lt;/tempo&gt;
-    </div>
-  </div>
-  <div class="caption-box">
-    <div class="caption-label">Ground Truth</div>
-    <div class="caption-content">
-      A: 103 bpm<br>
-      B: 155 bpm
+      A: 42 bpm
     </div>
   </div>
 
@@ -148,15 +118,13 @@
   <div class="caption-box">
     <div class="caption-label">FiLMu</div>
     <div class="caption-content">
-      A: &lt;key&gt;Cminor&lt;/key&gt;<br>
-      B: &lt;key&gt;Cmajor&lt;/key&gt;
+      A: &lt;key&gt;C#minor&lt;/key&gt;
     </div>
   </div>
   <div class="caption-box">
     <div class="caption-label">Ground Truth</div>
     <div class="caption-content">
-      A: Cminor<br>
-      B: Cmajor
+      A: C#minor
     </div>
   </div>
 
@@ -164,85 +132,13 @@
   <div class="caption-box">
     <div class="caption-label">FiLMu</div>
     <div class="caption-content">
-      A: &lt;chord&gt;(0, G#major), (0.66, Cminor), (2.99, A#major), (4.16, Fminor), (5.32, G#major), (7.65, Cminor)&lt;/chord&gt;<br>
-      B: &lt;chord&gt;(9.98, Fmajor), (11.54, Dminor), (12.33, Eminor), (13.11, Gmajor), (14.67, Dminor), (16.23, Fmajor), (17.79, Gmajor)&lt;/chord&gt;
+      A: &lt;chord&gt;(1.45, F#minor), (3.15, G#minor), (4.55, C#minor), (7.45, F#minor), (8.55, G#minor), (10.05, C#minor), (12.95, F#minor), (14.75, G#minor), (16.15, C#minor), (17.75, F#minor)&lt;/chord&gt;
     </div>
   </div>
   <div class="caption-box">
     <div class="caption-label">Ground Truth</div>
     <div class="caption-content">
-      A: (0, G#major), (0.66, Cminor), (2.99, A#major), (4.15, Fminor), (5.32, Gminor), (7.65, Cminor)<br>
-      B: (9.98, Fmajor), (11.53, Dminor), (12.3, Eminor), (13.08, Gmajor), (14.62, Dminor), (16.17, Fmajor), (17.72, Gmajor)
-    </div>
-  </div>
-
-  <h3 class="section-title">instrument</h3>
-  <div class="caption-box">
-    <div class="caption-label">FiLMu</div>
-    <div class="caption-content">
-      A: &lt;instrument&gt;Viola, Piano, AcousticGuitar, ElectricBass, Drums&lt;/instrument&gt;<br>
-      B: &lt;instrument&gt;ElectricGuitarLead, Piano, ElectricBass, Drums&lt;/instrument&gt;
-    </div>
-  </div>
-  <div class="caption-box">
-    <div class="caption-label">Ground Truth</div>
-    <div class="caption-content">
-      A: Viola, Piano, AcousticGuitar, ElectricBass, Drums<br>
-      B: ElectricGuitarLead, Piano, ElectricBass, Drums
-    </div>
-  </div>
-</div>
-
-<!-- AUDIO 3 -->
-<div class="audio-card">
-  <h2>audio3</h2>
-  <audio id="audio3" controls src="audio/003477_clip.wav"></audio>
-  <div class="progress-container">
-    <img src="images/003417_output.png" class="progress-image">
-    <div class="progress-bar-overlay" id="bar3"
-         style="--bar-left: 1.3%; --bar-top: 19%; --bar-bottom: 78%; --bar-max-width: 98%;">
-    </div>
-  </div>
-
-  <h3 class="section-title">tempo</h3>
-  <div class="caption-box">
-    <div class="caption-label">FiLMu</div>
-    <div class="caption-content">
-      A: &lt;tempo&gt;153 bpm&lt;/tempo&gt;
-    </div>
-  </div>
-  <div class="caption-box">
-    <div class="caption-label">Ground Truth</div>
-    <div class="caption-content">
-      A: 153 bpm
-    </div>
-  </div>
-
-  <h3 class="section-title">key</h3>
-  <div class="caption-box">
-    <div class="caption-label">FiLMu</div>
-    <div class="caption-content">
-      A: &lt;key&gt;Emajor&lt;/key&gt;
-    </div>
-  </div>
-  <div class="caption-box">
-    <div class="caption-label">Ground Truth</div>
-    <div class="caption-content">
-      A: Emajor
-    </div>
-  </div>
-
-  <h3 class="section-title">chord</h3>
-  <div class="caption-box">
-    <div class="caption-label">FiLMu</div>
-    <div class="caption-content">
-      A: &lt;chord&gt;(1.14, Bmajor), (2.84, Emajor), (4.44, Bmajor), (6.04, Emajor), (7.64, Bmajor), (9.34, Emajor), (14.14, Bmajor), (16.04, Emajor), (17.54, Bmajor)&lt;/chord&gt;
-    </div>
-  </div>
-  <div class="caption-box">
-    <div class="caption-label">Ground Truth</div>
-    <div class="caption-content">
-      A: (1.23, Bmajor), (2.93, Emajor), (4.43, Bmajor), (6.13, Emajor), (7.63, Bmajor), (9.43, Emajor), (14.43, Bmajor), (15.93, Emajor), (17.43, Bmajor)
+      A: (1.76, F#minor), (3.06, G#minor), (4.46, C#minor), (7.36, F#minor), (8.76, G#minor), (10.16, C#minor), (13.06, F#minor), (14.56, G#minor), (15.86, C#minor)
     </div>
   </div>
 
@@ -250,16 +146,32 @@
   <div class="caption-box">
     <div class="caption-label">FiLMu</div>
     <div class="caption-content">
-      A: &lt;genre&gt;['Rock', 'Punk', 'Garage']&lt;/genre&gt;
+      A: &lt;genre&gt;['electronic', 'pop', 'hiphop']&lt;/genre&gt;
     </div>
   </div>
   <div class="caption-box">
     <div class="caption-label">Ground Truth</div>
     <div class="caption-content">
-      A: ['Rock', 'Punk', 'Power-Pop']
+      A: ['electronic', 'pop', 'hiphop']
+    </div>
+  </div>
+
+  <h3 class="section-title">instrument</h3>
+  <div class="caption-box">
+    <div class="caption-label">FiLMu</div>
+    <div class="caption-content">
+      A: &lt;instrument&gt;drums, keyboard&lt;/instrument&gt;
+    </div>
+  </div>
+  <div class="caption-box">
+    <div class="caption-label">Ground Truth</div>
+    <div class="caption-content">
+      A: drums, keyboard
     </div>
   </div>
 </div>
+
+<!-- AUDIO BLOCKS END -->
 
 <script>
 function addProgressTracking(audioId, barId) {
@@ -277,6 +189,7 @@ function addProgressTracking(audioId, barId) {
 addProgressTracking("audio1", "bar1");
 addProgressTracking("audio2", "bar2");
 addProgressTracking("audio3", "bar3");
+addProgressTracking("audio4", "bar4");
 </script>
 
 </body>
