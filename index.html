@@ -43,13 +43,18 @@
 
     .progress-bar-overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 0%;
       background-color: rgba(0, 128, 255, 0.3);
       pointer-events: none;
       transition: width 0.05s linear;
+
+      /* 通过 CSS 变量控制位置 */
+      top: var(--bar-top, 0%);
+      bottom: var(--bar-bottom, 0%);
+      left: var(--bar-left, 0%);
+      right: var(--bar-right, auto);
+
+      height: auto;
+      width: 0%;
     }
 
     .caption {
@@ -75,11 +80,18 @@
 
   <div class="progress-container">
     <img src="images/1019_output.png" class="progress-image">
-    <div class="progress-bar-overlay" id="bar1"></div>
+    <div class="progress-bar-overlay" id="bar1"
+         style="
+           --bar-left: 2.5%;
+           --bar-right: 2.5%;
+           --bar-top: 12%;
+           --bar-bottom: 78%;
+         ">
+    </div>
   </div>
 
   <div class="caption"><strong>Ground Truth:</strong> Water pouring from a faucet and draining into a pipe while a young girl talks followed by a brush scrubbing then a person spitting.</div>
-  <div class="caption"><strong>LTU:</strong> An woman is taking whike a water flowing in the background.</div>
+  <div class="caption"><strong>LTU:</strong> A woman is taking while a water flowing in the background.</div>
 </div>
 
 <script>
