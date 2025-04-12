@@ -29,9 +29,9 @@
     }
 
     .progress-container {
+      position: relative;
       width: 100%;
       margin-top: 10px;
-      position: relative;
     }
 
     .progress-image {
@@ -41,11 +41,15 @@
       border: 1px solid #ccc;
     }
 
-    .progress-bar {
-      height: 8px;
+    .progress-bar-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
       width: 0%;
       background-color: rgba(0, 128, 255, 0.3);
-      margin-top: -8px; /* 紧贴图片底部 */
+      pointer-events: none;
+      transition: width 0.05s linear;
     }
 
     .caption {
@@ -68,10 +72,12 @@
 <div class="audio-card">
   <h2>audio1</h2>
   <audio id="audio1" controls src="audio/1019_mix_clip.wav"></audio>
+
   <div class="progress-container">
     <img src="images/1019_output.png" class="progress-image">
-    <div class="progress-bar" id="bar1"></div>
+    <div class="progress-bar-overlay" id="bar1"></div>
   </div>
+
   <div class="caption"><strong>Ground Truth:</strong> Water pouring from a faucet and draining into a pipe while a young girl talks followed by a brush scrubbing then a person spitting.</div>
   <div class="caption"><strong>LTU:</strong> An woman is taking whike a water flowing in the background.</div>
 </div>
