@@ -88,101 +88,94 @@
 
 <h1>🎵 FiLMu Demo</h1>
 
+<!-- AUDIO 1 -->
 <div class="audio-card">
   <h2>audio1</h2>
   <audio id="audio1" controls src="audio/1019_mix_clip.wav"></audio>
-
   <div class="progress-container">
     <img src="images/1019_output.png" class="progress-image">
     <div class="progress-bar-overlay" id="bar1"
-         style="
-           --bar-left: 1.3%;
-           --bar-top: 19%;
-           --bar-bottom: 78%;
-           --bar-max-width: 98%;
-         ">
+         style="--bar-left: 1.3%; --bar-top: 19%; --bar-bottom: 78%; --bar-max-width: 98%;">
     </div>
   </div>
 
-  <!-- TEMPO -->
+  <!-- 原有的 audio1 内容此处略去，可按你已有结构保留 -->
+</div>
+
+<!-- AUDIO 2 -->
+<div class="audio-card">
+  <h2>audio2</h2>
+  <audio id="audio2" controls src="audio/1595_mix_clip.wav"></audio>
+  <div class="progress-container">
+    <img src="images/1595_output.png" class="progress-image">
+    <div class="progress-bar-overlay" id="bar2"
+         style="--bar-left: 1.3%; --bar-top: 19%; --bar-bottom: 78%; --bar-max-width: 98%;">
+    </div>
+  </div>
+
   <h3 class="section-title">tempo</h3>
   <div class="caption-box">
     <div class="caption-label">FiLMu</div>
     <div class="caption-content">
-      A: &lt;tempo&gt;132 bpm&lt;/tempo&gt;<br>
-      B: &lt;tempo&gt;132 bpm&lt;/tempo&gt;<br>
-      C: &lt;tempo&gt;88 bpm&lt;/tempo&gt
+      A: &lt;tempo&gt;103 bpm&lt;/tempo&gt;<br>
+      B: &lt;tempo&gt;154 bpm&lt;/tempo&gt;
     </div>
   </div>
   <div class="caption-box">
     <div class="caption-label">Ground Truth</div>
     <div class="caption-content">
-      A: 132 bpm<br>
-      B: 132 bpm<br>
-      C: 88 bpm
+      A: 103 bpm<br>
+      B: 155 bpm
     </div>
   </div>
 
-  <!-- KEY -->
   <h3 class="section-title">key</h3>
   <div class="caption-box">
     <div class="caption-label">FiLMu</div>
     <div class="caption-content">
-      A: &lt;key&gt;F# major&lt;/key&gt;<br>
-      B: &lt;key&gt;F# major&lt;/key&gt;<br>
-      C: &lt;key&gt;B minor&lt;/key&gt
+      A: &lt;key&gt;Cminor&lt;/key&gt;<br>
+      B: &lt;key&gt;Cmajor&lt;/key&gt;
     </div>
   </div>
   <div class="caption-box">
     <div class="caption-label">Ground Truth</div>
     <div class="caption-content">
-      A: F# major<br>
-      B: F# major<br>
-      C: B minor
+      A: Cminor<br>
+      B: Cmajor
     </div>
   </div>
 
-  <!-- CHORD -->
   <h3 class="section-title">chord</h3>
   <div class="caption-box">
     <div class="caption-label">FiLMu</div>
     <div class="caption-content">
-      A: &lt;chord&gt;(0, C#major), (1.82, D#minor), (3.64, C#major), (4.55, G#minor), (5.46, F#major)&lt;/chord&gt;<br>
-      B: &lt;chord&gt;(7.28, C#major), (9.1, D#minor), (10.91, C#major), (11.82, G#minor), (12.73, F#major)&lt;/chord&gt;<br>
-      C: &lt;chord&gt;(14.55, Bminor), (17.27, Dmajor)&lt;/chord&gt
+      A: &lt;chord&gt;(0, G#major), (0.66, Cminor), (2.99, A#major), (4.16, Fminor), (5.32, G#major), (7.65, Cminor)&lt;/chord&gt;<br>
+      B: &lt;chord&gt;(9.98, Fmajor), (11.54, Dminor), (12.33, Eminor), (13.11, Gmajor), (14.67, Dminor), (16.23, Fmajor), (17.79, Gmajor)&lt;/chord&gt;
     </div>
   </div>
   <div class="caption-box">
     <div class="caption-label">Ground Truth</div>
     <div class="caption-content">
-      A: (0, C#major), (1.82, D#minor), (3.64, C#major), (4.55, G#minor), (5.46, F#major)<br>
-      B: (7.27, C#major), (9.09, D#minor), (10.91, C#major), (11.82, G#minor), (12.73, F#major)<br>
-      C: (14.55, Bminor), (17.27, Dmajor)
+      A: (0, G#major), (0.66, Cminor), (2.99, A#major), (4.15, Fminor), (5.32, Gminor), (7.65, Cminor)<br>
+      B: (9.98, Fmajor), (11.53, Dminor), (12.3, Eminor), (13.08, Gmajor), (14.62, Dminor), (16.17, Fmajor), (17.72, Gmajor)
     </div>
   </div>
 
-
-  <!-- INSTRUMENT -->
   <h3 class="section-title">instrument</h3>
   <div class="caption-box">
     <div class="caption-label">FiLMu</div>
     <div class="caption-content">
-      A: &lt;instrument&gt;Erhu, ElectricGuitarCrunch, OrganBass, Drums&lt;/instrument&gt;<br>
-      B: &lt;instrument&gt;Erhu, ElectricGuitarCrunch, OrganBass, Drums&lt;/instrument&gt;<br>
-      C: &lt;instrument&gt;Jinghu, ElectricGuitarCrunch, OrganBass, Drums&lt;/instrument&gt;
+      A: &lt;instrument&gt;Viola, Piano, AcousticGuitar, ElectricBass, Drums&lt;/instrument&gt;<br>
+      B: &lt;instrument&gt;ElectricGuitarLead, Piano, ElectricBass, Drums&lt;/instrument&gt;
     </div>
   </div>
   <div class="caption-box">
     <div class="caption-label">Ground Truth</div>
     <div class="caption-content">
-      A: Erhu, ElectricGuitarCrunch, OrganBass, Drums<br>
-      B: Erhu, ElectricGuitarCrunch, OrganBass, Drums<br>
-      C: Jinghu, ElectricGuitarCrunch, OrganBass, Drums
+      A: Viola, Piano, AcousticGuitar, ElectricBass, Drums<br>
+      B: ElectricGuitarLead, Piano, ElectricBass, Drums
     </div>
   </div>
-
-
-
 </div>
 
 <script>
@@ -199,6 +192,7 @@ function addProgressTracking(audioId, barId) {
 }
 
 addProgressTracking("audio1", "bar1");
+addProgressTracking("audio2", "bar2");
 </script>
 
 </body>
