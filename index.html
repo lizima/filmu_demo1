@@ -47,14 +47,13 @@
       pointer-events: none;
       transition: width 0.05s linear;
 
-      /* 通过 CSS 变量控制位置 */
+      /* 可自定义边距 */
       top: var(--bar-top, 0%);
       bottom: var(--bar-bottom, 0%);
       left: var(--bar-left, 0%);
-      right: var(--bar-right, auto);
 
-      height: auto;
       width: 0%;
+      max-width: var(--bar-max-width, 100%);
     }
 
     .caption {
@@ -82,10 +81,10 @@
     <img src="images/1019_output.png" class="progress-image">
     <div class="progress-bar-overlay" id="bar1"
          style="
-           --bar-left: 2.5%;
-           --bar-right: 2.5%;
+           --bar-left: 1.7%;
            --bar-top: 12%;
            --bar-bottom: 78%;
+           --bar-max-width: 95%;
          ">
     </div>
   </div>
