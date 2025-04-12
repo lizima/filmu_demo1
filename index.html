@@ -54,26 +54,22 @@
       max-width: var(--bar-max-width, 100%);
     }
 
-    .caption {
-      margin-top: 15px;
-      padding: 12px;
+    h3.section-title {
+      font-size: 1.3em;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .caption-box {
       background: #f0f0f0;
+      padding: 12px;
       border-left: 4px solid #888;
+      margin-bottom: 12px;
       line-height: 1.5;
+      white-space: pre-line;
     }
 
-    .caption strong.section {
-      display: block;
-      font-size: 1.1em;
-      margin-bottom: 5px;
-      color: #333;
-    }
-
-    .caption strong.label {
-      display: inline-block;
-      width: 110px;
-      color: #444;
-    }
   </style>
 </head>
 <body>
@@ -96,41 +92,51 @@
     </div>
   </div>
 
-  <div class="caption">
-    <strong class="section">tempo:</strong>
-    <strong class="label">FiLMu:</strong><br>
+  <!-- TEMPO -->
+  <h3 class="section-title">tempo</h3>
+  <div class="caption-box">
+    <strong>FiLMu:</strong><br>
     A: &lt;tempo&gt;132 bpm&lt;/tempo&gt;<br>
     B: &lt;tempo&gt;132 bpm&lt;/tempo&gt;<br>
-    C: &lt;tempo&gt;88 bpm&lt;/tempo&gt;<br>
-    <strong class="label">Ground Truth:</strong><br>
+    C: &lt;tempo&gt;88 bpm&lt;/tempo&gt;
+  </div>
+  <div class="caption-box">
+    <strong>Ground Truth:</strong><br>
     A: &lt;tempo&gt;132 bpm&lt;/tempo&gt;<br>
     B: &lt;tempo&gt;132 bpm&lt;/tempo&gt;<br>
     C: &lt;tempo&gt;88 bpm&lt;/tempo&gt;
   </div>
 
-  <div class="caption">
-    <strong class="section">key:</strong>
-    <strong class="label">FiLMu:</strong><br>
+  <!-- KEY -->
+  <h3 class="section-title">key</h3>
+  <div class="caption-box">
+    <strong>FiLMu:</strong><br>
     A: &lt;key&gt;C# major&lt;/key&gt;<br>
     B: &lt;key&gt;F minor&lt;/key&gt;<br>
-    C: &lt;key&gt;G minor&lt;/key&gt;<br>
-    <strong class="label">Ground Truth:</strong><br>
+    C: &lt;key&gt;G minor&lt;/key&gt;
+  </div>
+  <div class="caption-box">
+    <strong>Ground Truth:</strong><br>
     A: &lt;key&gt;C# major&lt;/key&gt;<br>
     B: &lt;key&gt;F minor&lt;/key&gt;<br>
     C: &lt;key&gt;G minor&lt;/key&gt;
   </div>
 
-  <div class="caption">
-    <strong class="section">chord:</strong>
-    <strong class="label">FiLMu:</strong><br>
-    A: &lt;chord&gt;(0.0, C#maj)&lt;/chord&gt;<br>
-    B: &lt;chord&gt;(7.3, D#min)&lt;/chord&gt;<br>
-    C: &lt;chord&gt;(14.5, G#7)&lt;/chord&gt;<br>
-    <strong class="label">Ground Truth:</strong><br>
+  <!-- CHORD -->
+  <h3 class="section-title">chord</h3>
+  <div class="caption-box">
+    <strong>FiLMu:</strong><br>
     A: &lt;chord&gt;(0.0, C#maj)&lt;/chord&gt;<br>
     B: &lt;chord&gt;(7.3, D#min)&lt;/chord&gt;<br>
     C: &lt;chord&gt;(14.5, G#7)&lt;/chord&gt;
   </div>
+  <div class="caption-box">
+    <strong>Ground Truth:</strong><br>
+    A: &lt;chord&gt;(0.0, C#maj)&lt;/chord&gt;<br>
+    B: &lt;chord&gt;(7.3, D#min)&lt;/chord&gt;<br>
+    C: &lt;chord&gt;(14.5, G#7)&lt;/chord&gt;
+  </div>
+
 </div>
 
 <script>
